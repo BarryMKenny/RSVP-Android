@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.barrykenny.barryandcristinrsvp.MainActivity">
+
+
+    <EditText android:id="@+id/edit_message"
+        android:hint="@string/edit_message"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:layout_toLeftOf="@+id/locationButton"
+        android:layout_below="@id/edit_message"
+        android:onClick="sendMessage"
+        />
+
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_wedding_location"
+        android:layout_below="@+id/edit_message"
+        android:onClick="openWeddingLocation"
+        />
+</RelativeLayout>
